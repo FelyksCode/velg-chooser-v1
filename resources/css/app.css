@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.frame1-container {
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-1 {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 1080px;
+    @media only screen and (width: 540px) {
+        height: 1100px;
+    }
+    @media only screen and (max-width: 281px) {
+        height: 900px;
+    }
+    max-height: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: "Space Grotesk";
+}
+
+/* RESPONSIVE TABLET KEATAS*/
+@media only screen and (min-width: 911px) {
+    .choose-your-velg {
+        position: absolute;
+        top: 167px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 300;
+        color: #000;
+        display: inline-block;
+        width: 700px;
+        font-size: 80px;
+    }
+
+    .frame1 {
+        margin-top: 2cap;
+        position: absolute;
+        width: 70%;
+        top: 255px;
+        border-radius: 20px;
+        background-color: #000;
+        height: 66%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 37px 0;
+        box-sizing: border-box;
+        gap: 24px;
+        font-size: 35px;
+    }
+
+    .complete-our-quiz {
+        position: relative;
+        font-size: 24px;
+        font-family: "Space Mono";
+        display: inline-block;
+        width: 90%;
+    }
+
+    #quiz-box {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+}
+
+/* RESPONSIVE HP */
+@media only screen and (max-width: 911px) {
+    .choose-your-velg {
+        position: absolute;
+        top: 167px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 300;
+        color: #000;
+        display: inline-block;
+        width: 410px;
+        @media only screen and (max-width: 281px) {
+            top: 155px;
+            width: 280px;
+            font-size: 30px;
+        }
+    }
+
+    .frame1 {
+        position: absolute;
+        width: 90%;
+        top: 255px;
+        border-radius: 20px;
+        background-color: #000;
+
+        height: 53%;
+
+        @media only screen and (max-width: 768px) {
+            height: 66%;
+        }
+        @media only screen and (min-width: 768px) {
+            height: 53%;
+        }
+        @media only screen and (width: 540px) {
+            height: 77%;
+        }
+        @media only screen and (max-width: 281px) {
+            height: 67%;
+        }
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 37px 0;
+        box-sizing: border-box;
+        gap: 24px;
+        font-size: 35px;
+    }
+
+    .complete-our-quiz {
+        position: relative;
+        font-size: 18px;
+        font-family: "Space Mono";
+        display: inline-block;
+        width: 80%;
+    }
+
+    #quiz-questions-container {
+        display: flex;
+        justify-content: center;
+    }
+    @media only screen and (max-width: 767px) {
+        #quiz-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    #quiz-box {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+img {
+    display: flex;
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (min-width: 767px) {
+        max-width: 40%;
+    }
+    @media only screen and (max-width: 767px) {
+        max-width: 60%;
+    }
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px #a6a6a6, 5px 4px 10px #504f4f;
+}
+
+.velg-chooser {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    width: 290px;
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 92px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.velg-quiz {
+    align-self: stretch;
+    position: relative;
+}

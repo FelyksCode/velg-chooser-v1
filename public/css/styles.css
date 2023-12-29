@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.choose-your-velg {
+    position: absolute;
+    top: 167px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    color: #000;
+    display: inline-block;
+    width: 410px;
+}
+
+.velg-chooser {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    width: 290px;
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 92px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.velg-quiz {
+    align-self: stretch;
+    position: relative;
+}
+
+.complete-our-quiz {
+    position: relative;
+    font-size: 18px;
+    font-family: "Space Mono";
+    display: inline-block;
+    width: 544px;
+}
+
+.desktop-1 {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: "Space Grotesk";
+}
+
+.frame1 {
+    position: absolute;
+    width: 52.78%;
+    top: 255px;
+    right: 23.61%;
+    left: 23.61%;
+    border-radius: 20px;
+    background-color: #000;
+    height: 625px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 37px 0;
+    box-sizing: border-box;
+    gap: 24px;
+    font-size: 35px;
+}
+
+.image-preview {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.preview-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
