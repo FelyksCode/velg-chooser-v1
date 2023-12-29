@@ -7,6 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@300;500;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Mono:wght@400&display=swap" />
+    <title>VELG</title>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
             @yield('quiz')
         </div>
     </div>
+    @vite('resources/js/app.js')
 </body>
 
 </html>
