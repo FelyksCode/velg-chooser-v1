@@ -11,15 +11,13 @@
 </head>
 
 <body>
+
     <div class="desktop-1">
-        <div class="choose-your-velg">Choose Your VELG</div>
         <div class="frame">
             <div class="velg-chooser">VELG CHOOSER</div>
         </div>
+        @yield('body')
 
-        <div class="frame1-container">
-            @yield('quiz')
-        </div>
     </div>
     @vite('resources/js/app.js')
 </body>

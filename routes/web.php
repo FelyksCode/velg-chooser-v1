@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VelgChooser;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('mainpage');
+Route::get('/', [VelgChooser::class, 'index']);
+
+Route::get('/csrf-token', function () {
+    return response()->json(['csrfToken' => csrf_token()]);
 });
+
+Route::get('/list', [VelgChooser::class, 'listpage']);
+Route::post('/list', [VelgChooser::class, 'processForm']);

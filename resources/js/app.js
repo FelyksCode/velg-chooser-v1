@@ -41,7 +41,7 @@ function saveSelectedOptions() {
         .map((checkbox) => checkbox.value);
     if (currentQuestion < totalQuestions) {
         // Save the selected options for the current question
-        selectedOptions[currentQuestion - 1] = checkedValues;
+        selectedOptions[currentQuestion] = checkedValues;
     }
 
     // Return the checked values
@@ -110,7 +110,23 @@ function submitForm() {
     if (quizBox) {
         quizBox.remove();
     }
-    // KOMEN FELIK: Ntar penambahan redirect disini.
+
+    // MAKE HIDDEN FORM biar bisa kesubmit trus di handle di controller
+    // Assuming you have a hidden form for submission
+    const hiddenForm = document.createElement("form");
+    hiddenForm.method = "POST";
+    hiddenForm.action = "/list";
+
+    // Add a hidden input field to pass the selected options
+    const optionsInput = document.createElement("input");
+    optionsInput.type = "hidden";
+    optionsInput.name = "selectedOptions";
+    optionsInput.value = JSON.stringify(selectedOptions);
+    hiddenForm.appendChild(optionsInput);
+
+    // Append the form to the document body and submit it
+    document.body.appendChild(hiddenForm);
+    hiddenForm.submit();
 }
 
 // Add an event listener to the form to call the changeQuestion function
