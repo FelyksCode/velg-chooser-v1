@@ -39,3 +39,14 @@
         </div>
     </div>
 @endsection
+
+@section('footer')
+    @vite('resources/js/app.js')
+
+    <div>
+        <form action="login" method="post">
+            @csrf
+            <button type="submit">Login</button>
+        </form>
+    </div>
+@endsection

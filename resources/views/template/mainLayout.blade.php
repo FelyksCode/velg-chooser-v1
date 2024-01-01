@@ -14,12 +14,12 @@
 
     <div class="desktop-1">
         <div class="frame">
-            <div class="velg-chooser">VELG CHOOSER</div>
+            <div class="velg-chooser"><a href="/">VELG CHOOSER</a></div>
         </div>
         @yield('body')
 
     </div>
-    @vite('resources/js/app.js')
+    @yield('footer')
 </body>
 
 </html>
